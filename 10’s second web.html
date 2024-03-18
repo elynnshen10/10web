@@ -1,0 +1,101 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>0314 p5js mouse trace tutorial</title>
+        
+        <!--链接单独的css文件 / link the separate css file-->
+        <link href="style.css" rel="stylesheet" />
+      
+        <!--链接p5js程式库 / link the p5js library -->
+        <script src="p5.min.js"></script>
+        <script src="p5.sound.js"></script>
+      
+        <!--链接自己写的p5js文件 / link the p5js file you write -->
+        <script src="genzong.js"></script>
+        <style>
+
+        .like_button {
+            position: absolute; 
+            left: 1010px;
+            top: 500px;
+            border-radius: 0px;
+            width: 200px; /* 按钮的宽度 */
+            height: 50px; /* 按钮的高度 */
+            font-size: 40px; /* 按钮文字的字体大小 */
+          }
+        </style>
+    </head>
+    
+    <body>
+        <img src="haidi.png" position:fixed loop autoplay width="10" height="2000"style="position:absolute; left:1100px; top:40px">
+        <h1 style="position:fixed; left:50px; top:0px; font-size:60px; font-style:italic; font-weight: 600; ">DIVE IN THE DATA<h1>
+            <h1 style="position:absolute; left:50px; top:200px; font-size:8px; font-style:italic; font-weight: 600; ">50m<h1>
+            <h1 style="position:absolute; left:50px; top:400px; font-size:13px; font-style:italic; font-weight: 600; ">100m<h1>
+            <h1 style="position:absolute; left:50px; top:800px; font-size:17px; font-style:italic; font-weight: 600; ">500m<h1>
+            <h1 style="position:absolute; left:50px; top:1400px; font-size:20px; font-style:italic; font-weight: 600; ">1000m<h1>
+            <h1 style="position:absolute; left:50px; top:1950px; font-size:25px; font-style:italic; font-weight: 600; ">1200m<h1>
+
+
+                    <details>
+                        <summary style="position:absolute; left:910px; top:900px; font-size:30px; font-style:italic; font-weight: 600; ">What do you see here?</summary>
+
+                    </details>
+
+                    <details>
+                        <summary style="position:absolute; left:200px; top:1550px; font-size:40px; font-style:italic; font-weight: 600; ">What do you see here?</summary>
+                        <h1 style="position:absolute; left:260px; top:1620px; font-size:15px; font-style:italic; font-weight: 600; ">Some of them were able to trace details clearly and remember key words, while others were completely blurred<h1>  
+                    </details>
+
+                    <details>
+                        <summary style="position:absolute; left:350px; top:2000px; font-size:25px; font-style:italic; font-weight: 600; ">Reading fragmented data and information, it is like drawing a meaningless picture, which is different each time</summary>
+                        <h1 style="position:absolute; left:940px; top:2030px; font-size:15px; font-style:italic; font-weight: 600; ">this mark is there forever, and it's changing you.<h1>  
+                    </details>   
+                    
+                
+ 
+
+                
+    <style>    
+        body {
+            cursor: none; /* 隐藏鼠标指针 */
+        }
+        
+    
+
+    </style>
+    </style>
+
+    <button class="like_button" onclick="likeButtonPressed()">Is it real?</button>
+<script>
+    let counter = 0 
+
+    function likeButtonPressed(){
+    counter = counter +1 
+    console.log(counter)
+
+    let h1 = document.querySelector('h1')
+
+    if(counter == 1){
+      h1.innerText = "You are now going on an adventuring, searching, feeling..."
+    }
+    if(counter == 2){
+      h1.innerText = "Move, swim, as far as you can."
+      
+
+    }
+    if(counter == 3){
+      h1.innerText = "What do you see?"
+      
+
+    }
+    if(counter == 4){
+      h1.innerText = "enjoy yourself while drowning."
+      alert("YOU ARE BEING FOLLOWED");
+      counter = 0
+    }
+  }  
+</script>
+    </html>
